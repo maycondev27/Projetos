@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+/* abaixo veja como funciona as variáveis (itens que estão disponiveis para utilizar quando quiser, se variando em vários que vc colocar) */
+
+:root {
+
+    --cor01body:#f8f2f2;
+    --cor02main:#FFFFFF;
+    --cor03footer:#FFFFFF;
+    --cor04doa:rgb(100, 97, 97);
+    --corhover:#FE5000;
+    --corbackgroud: #181818;
+
+    --fonte01: Arial, Helvetica, sans-serif;
+    --fonteparagrafo: 'Open Sans', Arial;
+    --fonteh3: 'Titillium Web', Arial;
+}
+
+/* utilizar * significa que você está aplicando uma configuração global, nesse caso foi para organizaro head do nosso site */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color:var(--cor04doa);
+    text-align: center;
+    margin: 10px;
+    font-size: 4em;
+    font-family: 'Architects Daughter';
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor01body);
+}
+header { 
+    margin: auto;
+    background-color:#181818;
+    border: 1px solid #181818;
+    min-height: 150px;
+    text-align: center;
+}
+nav {
+    background-image: url(imagens/menu.png);
+    padding: 30px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: -2px -11px 0px 0px rgba(0, 0, 0, 0.048);
+    
+    
+}
+
+nav > a {
+    font-family: var(--fonteh3);
+    text-decoration: none;
+    color: rgb(116, 114, 114);
+    font-weight: bold;
+    margin: auto;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    background-color: #FE5000;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+main {
+    border: 1px solid black;
+    background-color:var(--cor02main);
+    padding: 10px;
+    border-radius: 6px;
+    
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+ }
+ 
+ img {
+     width: 100%;
+ }
+
+
+footer {
+    font-family: Roboto;
+    text-align: center;
+    background-color: var(--cor02main);
+    width: auto;
+    padding: 4px;
+    margin: 0px;
+    font-size: 13px;
+}
+article {
+    background-color: var(--cor02main);
+    padding: 10px;
+    margin: 10px;
+    max-width: 988px;
+}
+
+section {
+margin: 60px;
+text-align: center;
+    
+}
+
+section#assuntos {
+    max-width: 855px;
+    margin: auto;
+    padding: 30px;
+}
+h1#principal {
+    color: rgb(100, 97, 97);
+   text-align: left;
+   padding: 20px;
+   margin: -13px;
+   font-family: var(--fonteh3);
+   font-size: 35px;
+   
+   
+}
+
+nav:hover
+{
+   background-color: orange;
+   
+}
+footer > p {
+   margin: 0px;
+   padding: 10px;
+}
+h3 {
+   font-family:var(--fonteh3);
+   color: rgb(99, 99, 96);
+}
+main p {
+   font-family: var(--fonteparagrafo);
+   font-weight: 580;
+   margin: 15px 0px;
+   text-align: justify;
+}
+header > p {
+    color: rgb(100, 97, 97);
+    text-align: center;
+    font-family: var(--fonteh3);
+    margin: 15px;
+}
+
+a#news {
+    padding: 10px;
+    margin: auto;
+    color: var(--cor04doa);
+}
+a#login {
+    padding: 10px;
+    margin: auto;
+    color: var(--cor04doa);
+}
+a.menu {
+    padding: 10px;
+    margin: auto;
+}
+h2 {
+    color:rgb(100, 97, 97);
+    
+}
+footer > p > a{
+    text-decoration: solid;
+    color: black;
+}
+footer a:hover {
+   text-decoration: solid;
+   color: #FE5000;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: 300px;
+    padding: 5px;
+}
+
+ article > img{
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+aside > p {
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+}
+
+/* para criar uma bola tematica
+div#bola
+{
+   height: 80px;
+   width: 80px;
+   margin-top: -650px;
+   background-image: url(backgroud/bonitao.png);
+   border-radius: 50%;
+}
+*/
